@@ -2,7 +2,6 @@ const cacheStorageKey = 'minimal-pwa-1'
 
 const cacheList = [
   '/',
-  '/pwa',
   "index.html",
   'manifest.json',
   "src/css/index.css",
