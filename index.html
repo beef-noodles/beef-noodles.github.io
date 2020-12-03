@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="PWA Tester" href="favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="./src/css/index.css">
+  <title>PWA test</title>
+</head>
+<body>
+  <div class="back">
+    <h3>Vision 1</h3>
+    <p>PWA tester, open Console for more~~~</p>
+
+  </div>
+  
+  <script>
+    if (navigator.serviceWorker != null) {
+      navigator.serviceWorker.register('sw.js')
+        .then(function (registration) {
+          console.log('Registered events at scope: ', registration.scope);
+        });
+    }
+  </script>
+</body>
+
+</html>
